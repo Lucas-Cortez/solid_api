@@ -1,18 +1,8 @@
 import { Router } from "express";
-// import { Router } from "../app";
-
-import { testRoutes } from "./testRoutes";
-
-// const route = Router();
-
-// route.get("/ola", (req, res) => {
-//   res.send("ola");
-// });
+import { productRoutes } from "./productRoutes";
 
 const route = Router();
 
-route.use("/hello", testRoutes);
-
-// export { route };
+route.use("/product", productRoutes);
 
 export { route };
